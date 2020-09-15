@@ -1,0 +1,116 @@
+SUMA DE NUMEROS ROMANOS:
+
+
+cadena1 = primer numero.
+cadena2 = segundo numero.
+
+cadenaResultado = concatenacion de cadena1 y cadena2.
+
+
+Principal(
+	Leer numero 1;
+	Leer numero 2;
+	descomponerCadena(cadena1);
+	descomponerCadena(cadena2);
+	cadenaResultado =cadena1+cadena2;
+	ordenarCadena(cadenaResultado);
+	reescribirCadena(cadenaResultado);
+)
+
+DescomponerCadena(
+	Si buscar("IV") == True:
+		cadenad += "IIII"
+	Si buscar ("IX"):
+		cadenad += "VIIII"
+	Si buscar("XL"):
+		cadenad += "XXXX"
+	Si buscar("XC"):
+		cadenad += "LXXXX"
+	Si buscar("CD"):
+		cadenad += "CCCC"
+	Si buscar ("CM"):
+		cadenad += "DCCCC"		
+)
+
+ReescribirCadena(
+	contadorI;
+	Por cada I en cadena contarorI+1;
+	Si contadorI == 4:
+		remplazar("IV")
+	Si contadorI == 5:
+		remplazar("V")
+	Si contadorI == 6:
+		remplazar("VI")
+	Si contadorI == 7:
+		remplazar("VII")
+	Si contadorI == 8:
+		remplazar("VIII")
+	Si contadorI == 9:
+		remplazar("IX")
+	
+	contadorV;
+	Por cada V en cadena contadorV+1;
+	Si contadorV == 2:
+		remplazar("X")
+	Si contadorV == 3:
+		remplazar("XV")
+	Si contadorV == 4:
+		remplazar("XX")
+	Si contadorV == 5:
+		remplazar("XXV")
+	Si contadorV == 6:
+		remplazar("XXX")
+	Si contadorV == 7:
+		remplazar("XXXV")
+	Si contador == 8:
+		remplazar("XL")
+	
+	contadoX;
+	Por cada X en cadena contadorX+1;
+	Si contadorX == 4:
+		remplazar("XL")
+	Si contadorX == 5:
+		remplazar("L")
+	Si contadorX == 6:
+		remplazar("LX")
+	Si contadorX == 7:
+		remplazar("LXX")
+	Si contadorX == 8:
+		remplazar("LXXX")
+	Si contadorX == 9:
+		remplazar("XC")	
+	
+	contadorC;
+	Por cada C en cadena contadorC+1;
+	Si contadorC == 4:
+		remplazar("CD")
+	Si contadorC == 5:
+		remplazar("D")
+	Si contadorC == 6:
+		remplazar("DC")
+	Si contadorC == 7:
+		remplazar("DCC")
+	Si contadorC == 8:
+		remplazar("DCCC")
+	Si contadorC == 9:
+		remplazar("CM")
+	Si contadorC == 10:
+		remplazar("CM")
+
+	contadorD;
+	Por cada D en cadena contadorD+1;
+	Si contadorD == 2:
+		remplazar("M")
+	Si contadorD == 3:
+		remplazar("MD")
+	Si contadorD == 4:
+		remplazar("MM")
+	Si contadorD == 5:
+		remplazar("MMD")
+	Si contadorD == 6:
+		remplazar("MMM")
+	Si contadorD == 7:
+		remplazar("MMMD")
+)
+
+
